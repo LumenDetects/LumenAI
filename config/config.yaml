@@ -1,0 +1,45 @@
+app:
+  name: Lumen AI
+  version: 1.0.0
+  environment: production  # Options: development, testing, production
+
+# Solana blockchain settings
+solana:
+  rpc_url: https://api.mainnet-beta.solana.com
+  timeout: 30  # Timeout for RPC requests in seconds
+
+# Database configuration
+database:
+  host: localhost
+  port: 5432
+  name: lumen_db
+  user: lumen_user
+  password: secure_password
+
+# Model parameters
+model:
+  input_size: 128
+  hidden_size: 64
+  output_size: 1
+  learning_rate: 0.001
+  epochs: 100
+
+# Logging configuration file path
+logging:
+  config_file: logging.conf
+
+# External APIs
+external_apis:
+  github:
+    base_url: https://api.github.com
+    token: your_github_token_here  # Replace with your GitHub API token
+
+# Notification settings
+notifications:
+  email:
+    smtp_server: smtp.example.com
+    port: 587
+    sender_email: no-reply@example.com
+    receiver_email: admin@example.com
+    username: smtp_user
+    password: smtp_password
